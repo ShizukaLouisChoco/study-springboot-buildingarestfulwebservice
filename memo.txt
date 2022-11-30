@@ -77,4 +77,7 @@ Dependency : Spring Web
     Notice also how the id attribute has changed from 1 to 2.
     This proves that you are working against the same GreetingController instance accross multiple requests and that its counter field is being incremented on each call as expected
 
+5) Summary
+    Congratulations! You have just developed a RESTful web service with Spring
+
 
