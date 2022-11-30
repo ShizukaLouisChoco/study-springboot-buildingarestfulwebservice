@@ -1,0 +1,29 @@
+https://spring.io/guides/gs/rest-service/
+
+Dependency : Spring Web
+
+1) Create a Resource Representation Class
+    service interaction :
+    the service handle GET requests for /greeting
+    optionally with a name parameter in the query string
+    GET request should return a 200 OK response with JSON in the body that represents a greeting
+
+    output prévu :
+    {
+        "id": 1,
+        "content": "Hello, World!"
+    }
+
+    id field is a unique identifier for the greeting
+    content is the textual representation of the greeting
+    To model the greeting representation, create a resource representation class with fields, constructors and accessors for the id and content data in Greeting.java
+
+    *This application uses the Jackson JSON library to automatically marshal instances of type Greeting into JSON.Jackson is included by default by the web starter
+
+2) Create a Resource Controller
+    To build RESTful web services, HTTP requests are handled by a controller
+    These components are identifies by the @RestController annotation.
+    The GreetingController handles GET requests for /greeting by returning a new instance of the Greeting class
+
+
+
