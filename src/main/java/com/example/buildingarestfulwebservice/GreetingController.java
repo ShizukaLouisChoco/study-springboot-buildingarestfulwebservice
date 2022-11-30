@@ -17,3 +17,4 @@ public class GreetingController {
             return new Greeting(counter.incrementAndGet(),String.format(template, name));
         }
 }
+//AtomicLongはLong型を持っているWrappingクラス。Thread-safeに実装されて、マルチスレッドでsynchronizedなく使用することができる。また、synchronizedよりも少ないコストで同時実行を保証する事ができる。https://codechacha.com/ja/java-atomic-long/#:~:text=AtomicLong%E3%81%AFLong%E5%9E%8B%E3%82%92,%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82
